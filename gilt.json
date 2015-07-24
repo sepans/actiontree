@@ -1,0 +1,167 @@
+{
+ "name": "user-id",
+ "type": "id",
+ "children": [
+  {
+   "name": "fact ediolog mailings",
+   "type": "metric",
+   "children": [
+      {
+        "name": "cell-id",
+         "type": "id",
+         "children": [
+            {"name": "dim edialog cells", "type": "entity"}
+         ]
+      },
+      {
+        "name": "campain-id",
+         "type": "id",
+         "children": [
+            {"name": "dim edialog campains", "type": "entity"}
+         ]
+      },
+      {
+        "name": "event-type-id",
+         "type": "id",
+         "children": [
+            {"name": "dim edialog event types", "type": "entity"}
+         ]
+      }
+   ]
+  },
+  {
+   "name": "fact exact target mailings",
+   "type": "metric",
+   "children": [
+      {
+        "name": "event-type-id",
+         "type": "id",
+         "children": [
+            {"name": "dim edialog event types", "type": "entity"}
+         ]
+      },
+      {
+        "name": "send-id",
+         "type": "id",
+         "children": [
+            {"name": "dim exact target send jobs", "type": "entity"}
+         ]
+      },
+      {
+        "name": "user-agent-id",
+         "type": "id",
+         "children": [
+            {"name": "dim user agents", "type": "entity"}
+         ]
+      }
+
+    ]
+  },
+  {"name": "fact city under email preferences", "type": "metric"},
+  {
+   "name": "fact clickstream page views",
+   "type": "metric",
+   "children": [
+      {
+        "name": "sale-id",
+         "type": "id",
+         "children": [
+            {"name": "dim sales", "type": "entity"}
+         ]
+      },
+      {
+        "name": "channel-id",
+         "type": "id",
+         "children": [
+            {"name": "dim channels", "type": "entity"}
+         ]
+      },
+      {
+        "name": "sku-id",
+         "type": "id",
+         "children": [
+            {"name": "dim product heirarchy", "type": "entity"}
+         ]
+      }
+
+    ]
+  },
+  {
+   "name": "fact clickstream page views",
+   "type": "metric",
+   "children": [
+      {
+        "name": "sale-id",
+         "type": "id",
+         "children": [
+            {"name": "dim sales", "type": "entity"}
+         ]
+      },
+      {
+        "name": "channel-id",
+         "type": "id",
+         "children": [
+            {"name": "dim channels", "type": "entity"}
+         ]
+      },
+      {
+        "name": "sku-id",
+         "type": "id",
+         "children": [
+            {"name": "dim product heirarchy", "type": "entity"}
+         ]
+      }
+
+    ]
+  },
+  {
+   "name": "fact orders",
+   "type": "metric",
+   "children": [
+      {
+        "name": "sale-id",
+         "type": "id",
+         "children": [
+            {"name": "dim sales", "type": "entity"}
+         ]
+      },
+      {
+        "name": "channel-id",
+         "type": "id",
+         "children": [
+            {"name": "dim channels", "type": "entity"}
+         ]
+      },
+      {
+        "name": "sku-id",
+         "type": "id",
+         "children": [
+            {"name": "dim product heirarchy", "type": "entity"}
+         ]
+      },
+      {
+        "name": "depratment-id",
+         "type": "id",
+         "children": [
+            {"name": "dim business hierarchies", "type": "entity"}
+         ]
+      },
+      {
+        "name": "location-id",
+         "type": "id",
+         "children": [
+            {"name": "dim location", "type": "entity"}
+         ]
+      },
+      {
+        "name": "order-status-id",
+         "type": "id",
+         "children": [
+            {"name": "dim order status", "type": "entity"}
+         ]
+      }
+
+    ]
+  }  
+ ]
+}
